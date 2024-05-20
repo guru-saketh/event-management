@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event List - Campus Events</title>
+    <title>Events - Campus Events</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css">
 </head>
 <body>
     <header>
-        <h1>Events</h1>
+        <h1>Welcome to Campus Events</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="create-event.html">Create Event</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="budget.html">Budget Management</a></li> <!-- Link to the budget management page -->
             </ul>
+            </ul>
+            <div class="profile">
+                <span id="username-display" class="dropbtn"></span>
+                <div id="profile-logo" class="dropdown">
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <h2>All Events</h2>
-        <div id="event-list">
-            <!-- Event cards will be dynamically inserted here -->
-        </div>
+        <!-- Events content goes here -->
+        <div id="calendar"></div>
     </main>
     <footer>
         <p>&copy; 2024 Campus Events. All rights reserved.</p>
     </footer>
+
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.min.js"></script>
 </body>
 </html>
