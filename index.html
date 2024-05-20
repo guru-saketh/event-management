@@ -8,13 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Campus Events</h1>
+        <h1>Campus Events</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="create-event.html">Create Event</a></li>
+                <li><a href="budget.html">Budget Management</a></li>
             </ul>
+            <div class="profile">
+                <span id="username-display" class="dropbtn">Your Username</span> <!-- Add the default username here -->
+                <div class="dropdown">
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -26,24 +35,6 @@
     <footer>
         <p>&copy; 2024 Campus Events. All rights reserved.</p>
     </footer>
-
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form id="login-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-        </div>
-    </div>
-
     <script src="scripts.js"></script>
 </body>
 </html>
